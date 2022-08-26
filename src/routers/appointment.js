@@ -59,6 +59,7 @@ const checkingAvailability = function(obj){
     return typeof(newStartDate);
 }
 
+
 //Reading User Data
 router.get("/users", async(req, res) =>{
     try{
@@ -101,5 +102,9 @@ router.get("/booking/:id", async(req, res) =>{
         res.status(400).send(e);
     }
 })
+
+// function checkingAvailability(){
+
+// }
 
 module.exports = router;
