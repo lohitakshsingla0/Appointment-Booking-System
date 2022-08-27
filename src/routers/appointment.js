@@ -83,8 +83,8 @@ async function addBooking(req, res) {
     try {
         const {name, startDate, endDate, clientName} = req.body
 
-        console.log(req.body)
-
+        console.log(typeof(res))
+        console.log(res)
         console.log(name)
         console.log(new Date(startDate).getTime())
         console.log(new Date(endDate).getTime())
@@ -142,5 +142,5 @@ const between = (x, min, max) => {
     return x >= min && x <= max;
 }
 
-module.exports.addBooking = addBooking;
+module.exports = addBooking;
 module.exports = router;
