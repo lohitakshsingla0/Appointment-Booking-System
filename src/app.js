@@ -12,6 +12,6 @@ app.use(express.json());
 app.use(router);
 
 
-app.listen(port, () => {
+module.exports = app.listen(port, () => {
     console.log(`Conenction is live at port no ${port}`);
 })
