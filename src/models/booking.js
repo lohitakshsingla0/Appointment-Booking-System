@@ -1,32 +1,22 @@
-const express= require("express");
 const mongoose = require("mongoose");
 
 
 const bookingSchema = new mongoose.Schema({
 
-    name: {
+    user: {
         type: String,
         required: true,
         trim: true
     },
-    startDate: {
-        type:Date, 
+    startTime: {
+        type:Number,
         required:true,
-        timestamp: true
     },
-    endDate: {
-        type:Date, 
+    endTime: {
+        type:Number,
         required:true
     },
-    // startTime: {
-    //     type:Number, 
-    //     required:true
-    // },
-    // endTime: {
-    //     type:Number, 
-    //     required:true
-    // },
-    clientName: {
+    client: {
         type: String,
         required: true,
     }
